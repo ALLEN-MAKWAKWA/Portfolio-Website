@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills & Education - Allen Makwakwa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: background 0.3s ease;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: normal;
+    }
+
+    .menu li a:hover {
+      background-color: #1abc9c;
+    }
+
+    .menu li a.active {
+      background-color: #1abc9c; 
+      font-weight: bold;
+      border-bottom: 3px solid white;
+    }
+
+    main {
+      padding: 40px;
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    main p {
+      font-size: 1.1em;
+      margin: 12px 0;
+    }
+
+    main p i {
+      color: #007bff;
+      margin-right: 10px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-top: 40px;
+    }
+
+    /* Separator line */
+    .separator {
+      border: 0;
+      height: 1.5px;
+      background: #1abc9c;
+      margin: 40px 0;
+      border-radius: 2px;
+      opacity: 0.7;
+    }
+
+    /* Progress Bars */
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill p {
+      margin: 0 0 6px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .progress {
+      background-color: #e0e0e0;
+      border-radius: 20px;
+      height: 22px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      color: white;
+      text-align: right;
+      padding-right: 10px;
+      line-height: 22px;
+      background-color: #1abc9c;
+      font-weight: bold;
+      border-radius: 20px 0 0 20px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    .footer-content p {
+      margin: 10px 0;
+    }
+
+    .footer-content a {
+      color: #1abc9c;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer-content a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5em;
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #1abc9c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Allen Makwakwa</h1>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-user"></i> About Me</a></li>
+      <li><a href="skills.html" class="active"><i class="fas fa-tools"></i> Skills & Education</a></li>
+      <li><a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Education</h2>
+      <p><i class="fas fa-university"></i> <strong>North West University</strong><br />
+      Bachelor of Information Technology majoring in Computer Science and Information Systems<br />
+      Expected Graduation: May 2026<br />
+      Current GPA: 70% average from completed modules</p>
+
+      <p><i class="fas fa-school"></i> <strong>Magwagwaza High School</strong><br />
+      2014 – 2019<br />
+      National Senior Certificate</p>
+    </section>
+
+    <hr class="separator" />
+
+    <section>
+      <h2>Skills</h2>
+      <p><i class="fas fa-code"></i> <strong>Programming:</strong> Python, C++, C#, Java, JavaScript, HTML, CSS</p>
+      <p><i class="fas fa-layer-group"></i> <strong>Frameworks:</strong> .NET (C#/.NET Core)</p>
+      <p><i class="fas fa-network-wired"></i> <strong>Networking:</strong> Cisco routing and switching</p>
+      <p><i class="fas fa-tools"></i> <strong>Tools:</strong> Git, SQL, Linux, Agile methodologies</p>
+      <p><i class="fas fa-comments"></i> <strong>Soft Skills:</strong> Problem-solving, teamwork, communication</p>
+    </section>
+
+    <hr class="separator" />
+
+    <section>
+      <h2>My Progress</h2>
+
+      <div class="skill">
+        <p><i class="fab fa-java"></i> Java</p>
+        <div class="progress"><div class="bar" style="width: 80%;">80%</div></div>
+      </div>
+
+      <div class="skill">
+        <p><i class="fab fa-python"></i> Python</p>
+        <div class="progress"><div class="bar" style="width: 72%;">72%</div></div>
+      </div>
+
+      <div class="skill">
+        <p><i class="fas fa-database"></i> SQL</p>
+        <div class="progress"><div class="bar" style="width: 87%;">87%</div></div>
+      </div>
+
+      <div class="skill">
+        <p><i class="fas fa-code"></i> C++</p>
+        <div class="progress"><div class="bar" style="width: 78%;">78%</div></div>
+      </div>
+
+      <div class="skill">
+        <p><i class="fab fa-microsoft"></i> C# / .NET</p>
+        <div class="progress"><div class="bar" style="width: 85%;">85%</div></div>
+      </div>
+
+      <div class="skill">
+        <p><i class="fab fa-js-square"></i> JavaScript</p>
+        <div class="progress"><div class="bar" style="width: 42%;">42%</div></div>
+      </div>
+
+      <div class="skill">
+        <p><i class="fab fa-html5"></i> HTML</p>
+        <div class="progress"><div class="bar" style="width: 84%;">84%</div></div>
+      </div>
+
+      <div class="skill">
+        <p><i class="fab fa-css3-alt"></i> CSS</p>
+        <div class="progress"><div class="bar" style="width: 80%;">80%</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>
+        CodeByAllen | Copyright &copy; 2025 
+      </p>
+      <div class="social-icons">
+        <a href="https://github.com/ALLEN-MAKWAKWA" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/allen-makwakwa" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/ma_alvo_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
