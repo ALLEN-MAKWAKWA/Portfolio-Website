@@ -369,6 +369,36 @@ main {
     font-size: 0.95rem;
   }
 }
+/* Phones */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projects,
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project,
+  .skill {
+    width: 100%;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .project {
+    flex: 1 1 45%;
+  }
+}
+
 
 
 
