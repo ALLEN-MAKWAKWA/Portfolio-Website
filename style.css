@@ -167,5 +167,209 @@ main {
   line-height: 24px;
   transition: width 0.6s ease;
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-frame {
+    padding: 30px 20px;
+    margin: 30px auto;
+  }
+
+  main {
+    padding: 30px 20px;
+    margin: 10px auto;
+  }
+
+  .certificate-row {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-frame h2 {
+    font-size: 1.5rem;
+  }
+
+  .main-frame p {
+    font-size: 1rem;
+  }
+
+  .btn-download {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .certificate-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .bar {
+    font-size: 0.9rem;
+    padding-right: 6px;
+  }
+
+  .progress {
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  .menu li a {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  .main-frame {
+    padding: 20px 15px;
+  }
+
+  main {
+    padding: 20px 15px;
+  }
+
+  .btn-download {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  .main-frame h2 {
+    font-size: 1.3rem;
+  }
+
+  .main-frame p {
+    font-size: 0.95rem;
+  }
+
+  .bar {
+    font-size: 0.8rem;
+  }
+
+  .skill p {
+    font-size: 0.95rem;
+  }
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-frame {
+    padding: 30px 20px;
+    margin: 30px auto;
+  }
+
+  main {
+    padding: 30px 20px;
+    margin: 10px auto;
+  }
+
+  .certificate-row {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-frame h2 {
+    font-size: 1.5rem;
+  }
+
+  .main-frame p {
+    font-size: 1rem;
+  }
+
+  .btn-download {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .certificate-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .bar {
+    font-size: 0.9rem;
+    padding-right: 6px;
+  }
+
+  .progress {
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  .menu li a {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  .main-frame {
+    padding: 20px 15px;
+  }
+
+  main {
+    padding: 20px 15px;
+  }
+
+  .btn-download {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  .main-frame h2 {
+    font-size: 1.3rem;
+  }
+
+  .main-frame p {
+    font-size: 0.95rem;
+  }
+
+  .bar {
+    font-size: 0.8rem;
+  }
+
+  .skill p {
+    font-size: 0.95rem;
+  }
+}
+
+
 
 
