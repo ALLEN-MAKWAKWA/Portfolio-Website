@@ -2,48 +2,244 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Allen Makwakwa</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Allen Makwakwa | Software Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
+<!-- Certificate Modal -->
+<div id="certificateModal" class="modal">
+  <span class="modal-close">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <p id="modalCaption"></p>
+</div>
 <body>
+
   <header>
-    <h1>Allen Makwakwa</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="about.html"><i class="fas fa-user"></i> About Me</a></li>
-      <li><a href="skills.html"><i class="fas fa-tools"></i> Skills & Education</a></li>
-      <li><a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a></li>
-      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <div class="main-frame">
-      <h2>Welcome to My Portfolio</h2>
-      <p>Explore my skills, projects, and certifications. Use the navigation menu above.</p>
-      <a href="files/Updated CV.pdf" download class="btn-download">
+    <!-- Hero -->
+    <section id="home">
+      <h1>Allen Makwakwa</h1>
+      <p>Aspiring Software Developer • BSc IT Graduate • Passionate about clean, scalable code</p>
+      <a href="files/Updated CV.pdf" download class="btn-download" style="margin-top:2rem; display:inline-block; background:var(--primary); color:white; padding:1rem 2rem; border-radius:8px; text-decoration:none; font-weight:bold;">
         <i class="fas fa-download"></i> Download Resume
       </a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <img src="profile.jpg" alt="Allen Makwakwa" class="profile-img"/>
+      <h2>About Me</h2>
+      <p>Hello! I’m Allen Makwakwa, a Bachelor of Science in Information Technology graduate majoring in Computer Science and Information Systems from North-West University.</p>
+      <p>I have a strong foundation in Python, C++, C#, Java, HTML/CSS, and JavaScript, with hands-on experience gained through academic and personal projects.</p>
+      <p>Passionate about building scalable, secure, and user-friendly applications, I am eager to contribute as a Software Developer Intern or Junior Developer in a dynamic team.</p>
+    </section>
+
+    <!-- Skills -->
+     <!-- Skills -->
+<section id="skills" class="skills-section">
+  <h2>
+    <span class="section-number">02.</span> Skills
+  </h2>
+
+  <div class="skills-grid">
+    <!-- Left column -->
+    <div class="skills-column">
+      <div class="skill-category">
+        <h3>LANGUAGES</h3>
+        <div class="skill-tags">
+          <span>Python</span>
+          <span>C++</span>
+          <span>C#</span>
+          <span>Java</span>
+          <span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>NETWORKING</h3>
+        <div class="skill-tags">
+          <span>Cisco Routing & Switching</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>SOFT SKILLS</h3>
+        <div class="skill-tags">
+          <span>Problem-solving</span>
+          <span>Teamwork</span>
+          <span>Communication</span>
+        </div>
+      </div>
     </div>
+
+    <!-- Right column -->
+    <div class="skills-column">
+      <div class="skill-category">
+        <h3>FRAMEWORKS</h3>
+        <div class="skill-tags">
+          <span>.NET</span>
+          <span>C#/.NET Core</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>TOOLS</h3>
+        <div class="skill-tags">
+          <span>Git</span>
+          <span>SQL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>North West University</strong> — BSc Information Technology (Computer Science & IS)<br>2022 – 2025 | GPA: 70.71</p>
+      <p><strong>Magwagwaza High School</strong> — National Senior Certificate<br>2014 – 2019</p>
+    </section>
+
+    <!-- Projects (add your real ones) -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <!-- <img src="project1.jpg" alt="Project"> --> <!-- add screenshots later -->
+          <div class="project-info">
+            <h3>Campus Connect</h3>
+            <p>Web-based school admin system built with C#, SQL, HTML/CSS/JS — student & course management.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Relational Database Design</h3>
+            <p>Designed and implemented efficient SQL databases with complex queries and normalization.</p>
+          </div>
+        </div>
+        <!-- Add 2–3 more cards -->
+      </div>
+    </section>
+    <!-- Certificate -->
+     <section id="certificates">
+      <h2>Certifications</h2>
+
+      <div class="certificate-grid">
+        <div class="certificate-card">
+          <img src="certificates/Free HTML and CSS certificate_page-0001.jpg" alt="HTML and CSS Certificate" class="certificate-img">
+          <h3>HTML & CSS</h3>
+        </div>
+
+        <div class="certificate-card">
+          <img src="certificates/Certificate JavaScript_page-0001(1).jpg" alt="JavaScript Certificate" class="certificate-img">
+          <h3>JavaScript</h3>
+        </div>
+
+        <div class="certificate-card">
+          <img src="certificates/Command Line Basics Cetificates_page-0001.jpg" alt="Command Line Basics Certificate" class="certificate-img">
+          <h3>Command Line Basics</h3>
+        </div>
+
+        <div class="certificate-card">
+          <img src="certificates/cloud-security.jpg" alt="Cloud Security Certificate" class="certificate-img">
+          <h3>Cloud Security</h3>
+        </div>
+
+        <div class="certificate-card">
+          <img src="certificates/cybercrime.jpg" alt="Cybercrime Certificate" class="certificate-img">
+          <h3>Cybercrime</h3>
+        </div>
+
+        <div class="certificate-card">
+          <img src="certificates/cybersecurity.jpg" alt="Cybersecurity Certificate" class="certificate-img">
+          <h3>Cybersecurity</h3>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <p>I'm open to internship / junior developer opportunities. Feel free to reach out!</p>
+      
+      <p><i class="fas fa-phone"></i> +27 79 237 9021</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:mulatiallen@gmail.com">mulatiallen@gmail.com</a></p>
+
+      <form action="https://formspree.io/f/xldljpgz" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <input type="text" name="subject" placeholder="Subject" required/>
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <div class="footer-content">
-      <p>CodeByAllen | Copyright &copy; 2025 
-        
-      </p>
-      <div class="social-icons">
-        <a href="https://github.com/ALLEN-MAKWAKWA" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/allen-makwakwa" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/ma_alvo_/" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
+    <div class="social-icons">
+      <a href="https://github.com/ALLEN-MAKWAKWA" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/allen-makwakwa" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/ma_alvo_/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
+    <p>© 2026 Allen Makwakwa | Built with passion</p>
   </footer>
+
+  <!-- Smooth scroll -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  <script>
+  const modal = document.getElementById("certificateModal");
+  const modalImg = document.getElementById("modalImage");
+  const caption = document.getElementById("modalCaption");
+  const closeBtn = document.querySelector(".modal-close");
+
+  document.querySelectorAll(".certificate-img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+      caption.textContent = img.alt;
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  closeBtn.onclick = () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  };
+
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  };
+</script>
+
 </body>
 </html>
