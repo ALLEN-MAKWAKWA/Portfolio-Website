@@ -411,6 +411,28 @@ section h2::after {
   font-size: 0.9rem;
   line-height: 1.7;
 }
+/* ============== PROJECT LINK ICON ============== */
+.project-card {
+  position: relative;
+}
+
+.project-link {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  color: var(--text-light);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.project-card:hover .project-link {
+  opacity: 1;
+}
+
+.project-link:hover {
+  color: var(--primary);
+}
+
 
 /* ============== CERTIFICATIONS ============== */
 #certificates {
