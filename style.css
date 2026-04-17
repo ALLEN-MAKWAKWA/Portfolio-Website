@@ -334,35 +334,108 @@ section h2::after {
 }
 
 /* ============== EDUCATION ============== */
+.education-timeline {
+  position: relative;
+  margin-top: 1rem;
+}
+
 .education-item {
   position: relative;
-  padding-left: 2rem;
-  border-left: 2px solid var(--border);
-  margin-bottom: 2rem;
-  transition: var(--transition);
+  display: flex;
+  gap: 0.75rem;  /* was 2rem */
+  margin-bottom: 3rem;
 }
 
-.education-item:hover {
-  border-left-color: hsla(175, 70%, 50%, 0.3);
-}
-
+/* Year on the left */
 .education-item .period {
   font-family: 'JetBrains Mono', monospace;
-  color: var(--primary);
-  font-size: 0.85rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  min-width: 4rem;
+  text-align: right;
+  padding-top: 0.15rem;
 }
 
-.education-item h3 {
-  font-size: 1.2rem;
-  margin-top: 0.25rem;
+/* The line + dot column */
+.edu-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
-.education-item p {
+/* Top dot — open circle (departure style) */
+.edu-dot-top {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--text);
+  background: transparent;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* Vertical line connecting dots */
+.edu-connector {
+  width: 2px;
+  flex: 1;
+  background: var(--text);
+  min-height: 60px;
+}
+
+/* Bottom dot — filled circle (arrival style) */
+.edu-dot-bottom {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--text);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* Content on the right */
+.edu-content {
+  padding-top: 0;
+  flex: 1;
+}
+
+.edu-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.edu-content .institution {
   color: var(--text-light);
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
 }
 
+.edu-content .edu-description {
+  color: var(--text-light);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* End year row (arrival time row) */
+.education-item-end {
+  display: flex;
+  gap: 0.75rem;  /* was 2rem */
+  align-items: center;
+  margin-top: -4.5rem;
+  margin-bottom: 2rem;
+}
+.education-item-end .period {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  min-width: 4rem;
+  text-align: right;
+}
 /* ============== PROJECTS ============== */
 .project-grid {
   display: grid;
