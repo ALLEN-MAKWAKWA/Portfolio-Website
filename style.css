@@ -673,18 +673,187 @@ footer {
 
 
 /* ============== RESPONSIVE ============== */
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 200;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* Animate to X when active */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 @media (max-width: 768px) {
-  nav ul.menu {
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: center;
+
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
   }
 
+  /* Nav positioning */
+  header nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hidden menu */
+  nav ul.menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsla(220, 20%, 7%, 0.97);
+    backdrop-filter: blur(16px);
+    z-index: 150;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul.menu.open {
+    display: flex;
+  }
+
+  nav ul.menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    font-size: 1.3rem;
+    padding: 1.2rem 2rem;
+    color: var(--text);
+  }
+
+  nav a:hover,
+  nav a.active {
+    color: var(--primary);
+  }
+
+  /* Hero */
+  .hero-wrapper {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .profile-frame {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+
+  /* Skills */
   .skills-grid {
     grid-template-columns: 1fr;
   }
 
-  #home h1 {
-    font-size: 2.5rem;
+  /* Education */
+  .education-item {
+    gap: 0.5rem;
+  }
+
+  .education-item .period {
+    min-width: 3rem;
+    font-size: 0.8rem;
+  }
+
+  .edu-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .edu-content .institution {
+    font-size: 0.85rem;
+  }
+
+  .edu-content .edu-description {
+    font-size: 0.82rem;
+  }
+
+  /* Projects */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Certificates */
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact form */
+  form {
+    width: 100%;
+  }
+
+  /* Section headings */
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-wrapper {
+    gap: 2rem;
+  }
+
+  .profile-frame {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certificate-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
