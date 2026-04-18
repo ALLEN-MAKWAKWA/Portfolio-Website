@@ -333,6 +333,21 @@ section h2::after {
   font-family: 'JetBrains Mono', monospace;
 }
 
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tags span {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.82rem;
+  border-radius: 6px;
+  background: var(--secondary);
+  color: hsl(210, 20%, 85%);
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid var(--border);
+}
 /* ============== EDUCATION ============== */
 .education-timeline {
   position: relative;
